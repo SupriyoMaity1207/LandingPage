@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+/* main  */
+.main{
+    max-width: 100%;
+  
+  
+    display: flex;
+}
+/* leftside */
+.leftside{
+  width: 40%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+
+}
+/* navbar */
+.navbar{
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+     font-size: 25px;
+    text-transform: capitalize;
+    padding: 20px 30px;
+   
+}
+.left-arrow{
+    cursor: pointer;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+   
+}
+.navlist li{
+    margin-right: 30px;
+    
+}
+.navlist li a{
+    text-decoration: none;
+    color: black;
+}
+.navlist li a i{
+    
+    color: royalblue;
+}
+/* left container */
+.container{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.container h1{
+    font-size: 90px;
+    font-weight:600;
+ 
+
+}
+.container p{
+    font-size: 20px;
+    opacity: 0.6;
+    font-weight: 700;
+    line-height: 30px;
+
+}
+.Read{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid black;
+    font-weight: 400;
+    padding-bottom: 10px;
+    line-height: 90px;
+    opacity: 0.6;
+}
+
+
+
+/* rightside */
+.rightside{
+   width: 60%;
+    height: 100vh;
+    
+}
+.top-right{
+    width: 100%;
+    height: 50%;
+    background-color: antiquewhite;
+    display: flex;
+}
+.left-top-right{
+    width: 50%;
+    height: 100%;
+   
+}
+.left-top-right img{
+    width: 100%;
+    height: 100%;
+}
+.right-top-right{
+    width: 50%;
+    height: 100%;
+
+}
+.right-top-right img{
+    width: 100%;
+    height: 100%;
+}
+.bottom-right{
+    width: 100%;
+    height: 50%;
+   
+}
+.bottom-right img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+/* responsive */
+@media (max-width: 500px) {
+   .main{
+    flex-direction: column;
+   
+ }
+ .navbar{
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    background-color:white;
+ }
+   .leftside{
+    width: 100%;
+    position: relative;
+ }
+ .container{
+    position: absolute;
+ }
+   
+   .rightside{
+    width: 100%;
+ }
+}
